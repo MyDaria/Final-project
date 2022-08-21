@@ -4,19 +4,16 @@ $color-one: #ffcc25; /*orange*/
 $font-logo: 'Lobster', serif;
 $font-title: 'Rubik', sans-serif;
 $font-subtitle: 'Source-Serif-Pro', serif;
+$font-minor: 'Georgia', serif;
 $transition: all 0.5s;
 
 /*Global*/
 
-.container {
-    max-width: 1140px;
-}
 
 body {
     text-align: center;
     margin: 0;
-    background: #fff;
-    color: #3d3d3d; 
+    background: #fff; 
     font-size: 16px;
 }
 
@@ -35,15 +32,20 @@ ul {
 
 h5 {
     font-family: $font-title;
+    font-size: 20px;
+    margin-bottom: 0;
+    margin-top: 22px;
 }
 
 h3 {
     font-family: $font-title;
+    margin-bottom: 0;
+    font-size: 24px;
 }
 
 h2 {
     font-family: $font-subtitle;
-    font-size: 40px;
+    font-size: 48px;
 }
 
 .splash h2 {
@@ -52,17 +54,19 @@ h2 {
 
 h1 {
     font-family: $font-title;
-    font-size: 64px;
+    font-size: 70px;
     margin-top: 15px;
 }
 
 p {
-    font-family: $font-subtitle;
+    font-family: $font-minor;
+    color: #5e5e5e;
 }
 
 .page-subtitle {
     margin-top: 0;
-    
+    font-size: 18px;
+    font-style: italic;
 }
 
 .section-title {
@@ -88,12 +92,13 @@ p {
     text-align: right;
     list-style-type: none;
     overflow: hidden;
+    font-size: 18px;
 }
 
 .navigation li {
     display: inline-block;
-    margin: 0 36px 0 0;
-    position: relative;
+    margin: 6px 36px 0 0;
+
 }
 
 .navigation ul li a:hover {
@@ -102,12 +107,14 @@ p {
 
 .logo {
     float:left;
+    padding-left: 20px;
 }
 
 .navigation .logo a {
     font-family: $font-logo;
     color: $color-one;
-    font-size: 23px;
+    font-size: 29px;
+    line-height: 18px;
 }
 
 /*Nav&Header*/
@@ -127,6 +134,7 @@ header {
     height: 500px;
     display: flex;
     padding: 39px 0 0 0;
+    margin-top: 29px;
 }
 
 header .container {
@@ -161,6 +169,11 @@ header .container {
 
 .service {
     margin-top: 48px;
+    padding: 0 15px;
+}
+
+.service p {
+    line-height: 20px;
 }
 
 .fa-solid {
@@ -192,27 +205,48 @@ img {
 }
 
 .card {
-    margin-top: 15px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    background-color: #ffffff;
+    padding-bottom: 10px;
 }
 
+.our-portfolio .row {
+    margin-top: 48px;
+}
+
+.project-text p {
+    margin-top: 0;
+    margin-bottom: 22px;
+    font-style: italic;
+    font-size: 18px;
+}
+
+
 /*Footer*/
+
+.page-footer {
+    margin: 20px 0;
+}
 
 .list-inline {
     display: inline-block;
 }
 
 footer ul {
-    margin: 48px 0;
     list-style-type: none;
+    float:left;
 }
 
 footer li {
     font-size: 0;
     display: inline-block;
+
 }
 
 footer .fa-brands {
     font-size: 17px;
+    margin: 0 2px;
     color: #fff;
     background-color: black;
     border-radius: 100%;
@@ -220,11 +254,12 @@ footer .fa-brands {
     width: 40px;
     line-height: 40px;
     background-position: 100% 0;
-    text-align: center;
+
 }
 
 footer p {
     padding: 0;
-    float:left;
+    text-align: left;
+    line-height: 40px;
 }
 /**/
